@@ -1,38 +1,36 @@
-# CTA-ALFARO
-CTA ALFARO
+# CTA Enrique Alfaro
 
-## Installation
+Sitio web de **Call to Action (CTA)** para el movimiento político de **Enrique Alfaro**, ex Gobernador de Jalisco y figura del Movimiento Ciudadano.
 
-### Prerequisites
-- Ensure you have Python 3.8 or higher installed.
-- Install Git to clone the repository.
+## Estructura del proyecto
 
-### Steps
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/cta-alfaro.git
-   ```
-2. Navigate into the project directory:
-   ```bash
-   cd cta-alfaro
-   ```
-3. (Optional) Create and activate a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
-4. Install the required packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
+```
+CTA-ALFARO/
+├── index.html   # Página principal con todas las secciones
+├── styles.css   # Hoja de estilos (CSS variables, responsive)
+├── script.js    # Interactividad: formulario, contadores, animaciones
+└── README.md    # Este archivo
+```
 
-### Configuration
-- Update the `config.json` file with your specific settings if necessary.
+## Secciones
 
-### Running the Project
-- To start the application, run:
-  ```bash
-  python main.py
-  ```
+| Sección | Descripción |
+|---------|-------------|
+| **Hero** | Portada principal con CTA "Súmate al movimiento" |
+| **Estadísticas** | Cifras animadas de logros de gestión |
+| **Propuestas** | 6 propuestas clave en tarjetas |
+| **Logros** | Línea de tiempo de logros 2019–2024 |
+| **Equipo** | Perfiles del equipo del movimiento |
+| **Registro** | Formulario de registro con validación |
+| **Contacto** | Datos de contacto y redes sociales |
 
-Ensure all steps are followed on a clean environment to verify the accuracy of these instructions.
+## Cómo visualizar
+
+Simplemente abre `index.html` en cualquier navegador moderno. No requiere servidor ni dependencias externas.
+
+## Tecnologías
+
+- HTML5 semántico
+- CSS3 (variables, Grid, Flexbox, animaciones)
+- JavaScript vanilla (sin frameworks)
+- Diseño totalmente responsivo (mobile-first)

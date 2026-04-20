@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CTA Enrique Alfaro</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__logo">
+        <span class="logo-cta">CTA</span>
+        <span class="logo-name">Enrique Alfaro</span>
+      </a>
+      <nav class="navbar__links">
+        <a href="#propuestas">Propuestas</a>
+        <a href="#logros">Logros</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="btn btn--primary navbar__cta" onclick="scrollToForm()">Únete</button>
+      <button class="navbar__toggle" aria-label="Abrir menú" onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <nav class="navbar__mobile" id="mobileMenu">
+      <a href="#propuestas" onclick="toggleMenu()">Propuestas</a>
+      <a href="#logros" onclick="toggleMenu()">Logros</a>
+      <a href="#equipo" onclick="toggleMenu()">Equipo</a>
+      <a href="#contacto" onclick="toggleMenu()">Contacto</a>
+      <a href="#unete" class="btn btn--primary" onclick="toggleMenu()">Únete</a>
+    </nav>
+  </header>
+
+  <!-- HERO / CTA PRINCIPAL -->
+  <section class="hero" id="inicio">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <p class="hero__eyebrow">Movimiento Ciudadano · Jalisco</p>
+      <h1 class="hero__title">Enrique Alfaro</h1>
+      <p class="hero__subtitle">
+        Un liderazgo comprometido con la transformación real de Jalisco.
+        Juntos construimos un estado más justo, seguro y con oportunidades para todos.
+      </p>
+      <div class="hero__actions">
+        <button class="btn btn--primary btn--lg" onclick="scrollToForm()">Súmate al movimiento</button>
+        <a href="#propuestas" class="btn btn--outline btn--lg">Conoce las propuestas</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- BANDAS DE ESTADÍSTICAS -->
+  <section class="stats-band">
+    <div class="container stats-band__grid">
+      <div class="stat-item">
+        <span class="stat-item__number" data-target="8">0</span><span class="stat-item__suffix">+</span>
+        <p class="stat-item__label">Años de gestión</p>
+      </div>
+      <div class="stat-item">
+        <span class="stat-item__number" data-target="120">0</span><span class="stat-item__suffix">k</span>
+        <p class="stat-item__label">Empleos generados</p>
+      </div>
+      <div class="stat-item">
+        <span class="stat-item__number" data-target="300">0</span><span class="stat-item__suffix">+</span>
+        <p class="stat-item__label">Obras realizadas</p>
+      </div>
+      <div class="stat-item">
+        <span class="stat-item__number" data-target="1200000">0</span><span class="stat-item__suffix"></span>
+        <p class="stat-item__label">Familias beneficiadas</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROPUESTAS -->
+  <section class="propuestas section" id="propuestas">
+    <div class="container">
+      <h2 class="section__title">Nuestras Propuestas</h2>
+      <p class="section__subtitle">Un plan concreto para un Jalisco mejor</p>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card__icon">🏙️</div>
+          <h3 class="card__title">Desarrollo Urbano</h3>
+          <p class="card__text">Impulsar ciudades inteligentes, espacios públicos dignos y transporte moderno para todos los jaliscienses.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">💼</div>
+          <h3 class="card__title">Economía y Empleo</h3>
+          <p class="card__text">Fomentar la innovación, atraer inversión y crear empleos bien remunerados en sectores estratégicos.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">🎓</div>
+          <h3 class="card__title">Educación de Calidad</h3>
+          <p class="card__text">Garantizar acceso equitativo a la educación pública de calidad desde la primera infancia hasta la universidad.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">🏥</div>
+          <h3 class="card__title">Salud para Todos</h3>
+          <p class="card__text">Ampliar la cobertura de salud, modernizar hospitales y garantizar medicamentos gratuitos a la población.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">🌿</div>
+          <h3 class="card__title">Medio Ambiente</h3>
+          <p class="card__text">Proteger el Lago de Chapala, reducir la contaminación y liderar la transición energética en el occidente del país.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">🛡️</div>
+          <h3 class="card__title">Seguridad Ciudadana</h3>
+          <p class="card__text">Reforzar la policía de proximidad, tecnología de vigilancia y programas de prevención del delito.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGROS -->
+  <section class="logros section section--alt" id="logros">
+    <div class="container">
+      <h2 class="section__title">Principales Logros</h2>
+      <p class="section__subtitle">Resultados que hablan por sí solos</p>
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__year">2019</span>
+            <h3>Sistema de Tren Eléctrico Urbano</h3>
+            <p>Ampliación de la red del tren ligero de Guadalajara, conectando más colonias y reduciendo el tiempo de traslado.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__year">2020</span>
+            <h3>Respuesta COVID-19</h3>
+            <p>Gestión eficiente de la pandemia con hospitales de campaña, programa de vacunación y apoyo económico a familias.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__year">2021</span>
+            <h3>Inversión Récord en Tecnología</h3>
+            <p>Jalisco se consolidó como el principal destino de inversión tecnológica del país con más de 2,000 millones de dólares.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__year">2022–2024</span>
+            <h3>Infraestructura y Obras Públicas</h3>
+            <p>Más de 300 obras de infraestructura vial, hospitalaria y educativa distribuidas en todo el estado.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPO -->
+  <section class="equipo section" id="equipo">
+    <div class="container">
+      <h2 class="section__title">Nuestro Equipo</h2>
+      <p class="section__subtitle">Personas comprometidas con Jalisco</p>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-card__avatar">EA</div>
+          <h3 class="team-card__name">Enrique Alfaro</h3>
+          <p class="team-card__role">Líder del Movimiento</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__avatar">CC</div>
+          <h3 class="team-card__name">Coordinación Central</h3>
+          <p class="team-card__role">Estrategia y Comunicación</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__avatar">JL</div>
+          <h3 class="team-card__name">Juntas Locales</h3>
+          <p class="team-card__role">Organización Territorial</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__avatar">JS</div>
+          <h3 class="team-card__name">Juventudes</h3>
+          <p class="team-card__role">Sector Joven del Movimiento</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA DE CONTACTO / REGISTRO -->
+  <section class="cta-register section" id="unete">
+    <div class="container cta-register__inner">
+      <div class="cta-register__text">
+        <h2>Sé parte del cambio</h2>
+        <p>Tu participación es fundamental. Regístrate y sé el primer punto de contacto en tu colonia, municipio o región.</p>
+        <ul class="cta-register__benefits">
+          <li>✅ Acceso a información exclusiva del movimiento</li>
+          <li>✅ Capacitación política y cívica gratuita</li>
+          <li>✅ Red de contactos y colaboración ciudadana</li>
+        </ul>
+      </div>
+      <form class="cta-form" id="ctaForm" novalidate>
+        <h3 class="cta-form__title">Regístrate ahora</h3>
+        <div class="form-group">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required />
+        </div>
+        <div class="form-group">
+          <label for="municipio">Municipio</label>
+          <input type="text" id="municipio" name="municipio" placeholder="Tu municipio en Jalisco" />
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono (opcional)</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="10 dígitos" />
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Quiero participar</button>
+        <p class="form-disclaimer">Tu información es confidencial y no será compartida con terceros.</p>
+        <div class="form-success" id="formSuccess" hidden>
+          ¡Gracias por registrarte! Nos pondremos en contacto contigo pronto. 🎉
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contacto section section--alt" id="contacto">
+    <div class="container contacto__grid">
+      <div>
+        <h2 class="section__title" style="text-align:left;">Contáctanos</h2>
+        <p>¿Tienes preguntas, propuestas o quieres colaborar? Estamos aquí para escucharte.</p>
+        <div class="contact-info">
+          <p>📧 <a href="mailto:contacto@ctaalfaro.mx">contacto@ctaalfaro.mx</a></p>
+          <p>📱 <a href="tel:+523312345678">+52 33 1234 5678</a></p>
+          <p>📍 Guadalajara, Jalisco, México</p>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="Twitter/X">𝕏</a>
+          <a href="#" class="social-link" aria-label="Instagram">📷</a>
+          <a href="#" class="social-link" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+      <div class="map-placeholder" aria-label="Mapa de Guadalajara, Jalisco">
+        <span>📍 Guadalajara, Jalisco</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo-cta">CTA</span>
+        <span class="logo-name">Enrique Alfaro</span>
+      </div>
+      <p class="footer__copy">© 2024 CTA Enrique Alfaro · Movimiento Ciudadano · Jalisco, México</p>
+      <nav class="footer__nav">
+        <a href="#propuestas">Propuestas</a>
+        <a href="#logros">Logros</a>
+        <a href="#unete">Únete</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
