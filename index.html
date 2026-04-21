@@ -11,25 +11,25 @@
   <!-- HEADER / NAVBAR -->
   <header class="navbar">
     <div class="container navbar__inner">
-      <a href="#" class="navbar__logo">
+      <a href="#" class="navbar__logo" role="link" tabindex="0">
         <span class="logo-cta">CTA</span>
         <span class="logo-name">Enrique Alfaro</span>
       </a>
       <nav class="navbar__links">
-        <a href="#propuestas">Propuestas</a>
-        <a href="#logros">Logros</a>
-        <a href="#equipo">Equipo</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#propuestas" role="link" tabindex="0">Propuestas</a>
+        <a href="#logros" role="link" tabindex="0">Logros</a>
+        <a href="#equipo" role="link" tabindex="0">Equipo</a>
+        <a href="#contacto" role="link" tabindex="0">Contacto</a>
       </nav>
-      <button class="btn btn--primary navbar__cta" onclick="scrollToForm()">Únete</button>
-      <button class="navbar__toggle" aria-label="Abrir menú" onclick="toggleMenu()">&#9776;</button>
+      <button class="btn btn--primary navbar__cta" onclick="scrollToForm()" role="button" tabindex="0">Únete</button>
+      <button class="navbar__toggle" aria-label="Abrir menú" onclick="toggleMenu()" role="button" tabindex="0">&#9776;</button>
     </div>
     <nav class="navbar__mobile" id="mobileMenu">
-      <a href="#propuestas" onclick="toggleMenu()">Propuestas</a>
-      <a href="#logros" onclick="toggleMenu()">Logros</a>
-      <a href="#equipo" onclick="toggleMenu()">Equipo</a>
-      <a href="#contacto" onclick="toggleMenu()">Contacto</a>
-      <a href="#unete" class="btn btn--primary" onclick="toggleMenu()">Únete</a>
+      <a href="#propuestas" onclick="toggleMenu()" role="link" tabindex="0">Propuestas</a>
+      <a href="#logros" onclick="toggleMenu()" role="link" tabindex="0">Logros</a>
+      <a href="#equipo" onclick="toggleMenu()" role="link" tabindex="0">Equipo</a>
+      <a href="#contacto" onclick="toggleMenu()" role="link" tabindex="0">Contacto</a>
+      <a href="#unete" class="btn btn--primary" onclick="toggleMenu()" role="link" tabindex="0">Únete</a>
     </nav>
   </header>
 
@@ -44,8 +44,8 @@
         Juntos construimos un estado más justo, seguro y con oportunidades para todos.
       </p>
       <div class="hero__actions">
-        <button class="btn btn--primary btn--lg" onclick="scrollToForm()">Súmate al movimiento</button>
-        <a href="#propuestas" class="btn btn--outline btn--lg">Conoce las propuestas</a>
+        <button class="btn btn--primary btn--lg" onclick="scrollToForm()" role="button" tabindex="0">Súmate al movimiento</button>
+        <a href="#propuestas" class="btn btn--outline btn--lg" role="link" tabindex="0">Conoce las propuestas</a>
       </div>
     </div>
     <div class="hero__scroll-hint">
@@ -181,92 +181,11 @@
         <div class="team-card">
           <div class="team-card__avatar">JS</div>
           <h3 class="team-card__name">Juventudes</h3>
-          <p class="team-card__role">Sector Joven del Movimiento</p>
+          <p class="team-card__role">Participación Juvenil</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA DE CONTACTO / REGISTRO -->
-  <section class="cta-register section" id="unete">
-    <div class="container cta-register__inner">
-      <div class="cta-register__text">
-        <h2>Sé parte del cambio</h2>
-        <p>Tu participación es fundamental. Regístrate y sé el primer punto de contacto en tu colonia, municipio o región.</p>
-        <ul class="cta-register__benefits">
-          <li>✅ Acceso a información exclusiva del movimiento</li>
-          <li>✅ Capacitación política y cívica gratuita</li>
-          <li>✅ Red de contactos y colaboración ciudadana</li>
-        </ul>
-      </div>
-      <form class="cta-form" id="ctaForm" novalidate>
-        <h3 class="cta-form__title">Regístrate ahora</h3>
-        <div class="form-group">
-          <label for="nombre">Nombre completo</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Correo electrónico</label>
-          <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required />
-        </div>
-        <div class="form-group">
-          <label for="municipio">Municipio</label>
-          <input type="text" id="municipio" name="municipio" placeholder="Tu municipio en Jalisco" />
-        </div>
-        <div class="form-group">
-          <label for="telefono">Teléfono (opcional)</label>
-          <input type="tel" id="telefono" name="telefono" placeholder="10 dígitos" />
-        </div>
-        <button type="submit" class="btn btn--primary btn--full">Quiero participar</button>
-        <p class="form-disclaimer">Tu información es confidencial y no será compartida con terceros.</p>
-        <div class="form-success" id="formSuccess" hidden>
-          ¡Gracias por registrarte! Nos pondremos en contacto contigo pronto. 🎉
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- CONTACTO -->
-  <section class="contacto section section--alt" id="contacto">
-    <div class="container contacto__grid">
-      <div>
-        <h2 class="section__title" style="text-align:left;">Contáctanos</h2>
-        <p>¿Tienes preguntas, propuestas o quieres colaborar? Estamos aquí para escucharte.</p>
-        <div class="contact-info">
-          <p>📧 <a href="mailto:contacto@ctaalfaro.mx">contacto@ctaalfaro.mx</a></p>
-          <p>📱 <a href="tel:+523312345678">+52 33 1234 5678</a></p>
-          <p>📍 Guadalajara, Jalisco, México</p>
-        </div>
-        <div class="social-links">
-          <a href="#" class="social-link" aria-label="Facebook">f</a>
-          <a href="#" class="social-link" aria-label="Twitter/X">𝕏</a>
-          <a href="#" class="social-link" aria-label="Instagram">📷</a>
-          <a href="#" class="social-link" aria-label="YouTube">▶</a>
-        </div>
-      </div>
-      <div class="map-placeholder" aria-label="Mapa de Guadalajara, Jalisco">
-        <span>📍 Guadalajara, Jalisco</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <span class="logo-cta">CTA</span>
-        <span class="logo-name">Enrique Alfaro</span>
-      </div>
-      <p class="footer__copy">© 2024 CTA Enrique Alfaro · Movimiento Ciudadano · Jalisco, México</p>
-      <nav class="footer__nav">
-        <a href="#propuestas">Propuestas</a>
-        <a href="#logros">Logros</a>
-        <a href="#unete">Únete</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
