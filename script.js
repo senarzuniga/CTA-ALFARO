@@ -140,4 +140,4 @@ document.addEventListener('click', (e) => {
   if (menu && toggle && !menu.contains(e.target) && !toggle.contains(e.target)) {
     menu.classList.remove('open');
   }
-});
+}, { passive: true });
