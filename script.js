@@ -74,17 +74,28 @@ function animateCounters() {
   }
 })();
 
+/* ---------- Debounce Function ---------- */
+function debounce(func, wait) {
+  let timeout;
+  return function(...args) {
+    const context = this;
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(context, args), wait);
+  };
+}
+
 /* ---------- Navbar: shrink on scroll ---------- */
 (function initNavbarScroll() {
   const navbar = document.querySelector('.navbar');
   if (!navbar) return;
-  window.addEventListener('scroll', () => {
+  const handleScroll = debounce(() => {
     if (window.scrollY > 60) {
       navbar.style.background = 'rgba(29, 53, 87, 0.99)';
     } else {
       navbar.style.background = 'rgba(29, 53, 87, 0.96)';
     }
-  }, { passive: true });
+  }, 100);
+  window.addEventListener('scroll', handleScroll, { passive: true });
 })();
 
 /* ---------- CTA Form Validation & Submission ---------- */
